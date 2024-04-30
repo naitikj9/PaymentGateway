@@ -20,14 +20,14 @@ public class RazorpayPaymentGateway implements PaymentGateway {
         RazorpayClient razorpay = new RazorpayClient(razorpayKeyId, razorpayKeySecret);
         JSONObject paymentLinkRequest = new JSONObject();
 
-        paymentLinkRequest.put("amount",1000);
+        paymentLinkRequest.put("amount",6000);
         paymentLinkRequest.put("currency","INR");
-        paymentLinkRequest.put("expire_by",1714045778);
-        paymentLinkRequest.put("reference_id", "15423456");
-        paymentLinkRequest.put("description","Sample payment link for SST");
+        paymentLinkRequest.put("expire_by",69696996969);
+        paymentLinkRequest.put("reference_id", "1523094");
+        paymentLinkRequest.put("description","Sample payment link for uber clap");
         JSONObject customer = new JSONObject();
-        customer.put("name","+919000090000");
-        customer.put("contact","Deepak Kasera");
+        customer.put("name","+9198971234");
+        customer.put("contact","NaitikJain");
         customer.put("email", email);
         paymentLinkRequest.put("customer",customer);
         JSONObject notify = new JSONObject();
